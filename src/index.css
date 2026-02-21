@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Excalidraw needs explicit dimensions to avoid white screen */
+.excalidraw-wrapper {
+  display: block;
+  overflow: hidden;
+}
+.excalidraw-wrapper > div,
+.excalidraw-wrapper .excalidraw {
+  height: 100% !important;
+  width: 100% !important;
+  min-height: 400px !important;
+  display: block !important;
+}
+.excalidraw .excalidraw__canvas-container,
+.excalidraw [class*="canvas-container"] {
+  height: 100% !important;
+  width: 100% !important;
+  min-height: 400px !important;
+}
